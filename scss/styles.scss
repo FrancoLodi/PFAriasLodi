@@ -1,1 +1,10 @@
-@import "utilidades/reset"
+// SCSS a CSS
+
+@import "utilidades/variables";
+
+//RESET
+@import "utilidades/reset";
+
+//HOME Y BANNER
+@import "utilidades/html/header-navbar";
+@import "utilidades/html/home";

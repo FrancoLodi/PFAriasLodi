@@ -1,0 +1,44 @@
+@import "../variables";
+
+// HOME
+
+/*HOME*/
+
+main {
+  .banner {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 96%;
+      margin-bottom: 20px;
+      box-shadow: 0px 6px 6px rgba(128, 128, 128, 0.774);
+    }
+  }
+  .cartelera {
+    display: grid;
+    justify-content: space-around;
+    gap: 16px;
+    align-content: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 12px;
+      background-color: $color-dark-blue;
+      border: 5px solid $color-dark-blue;
+      box-shadow: 1px 2px 6px gray;
+      a {
+        color: $color-white;
+        text-decoration: none;
+        font-family: Arial;
+        font-size: 14px;
+        p {
+          margin-top: 6px;
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}
+
+@import "home-mq"

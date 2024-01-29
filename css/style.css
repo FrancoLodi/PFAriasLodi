@@ -5,6 +5,123 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
 
+/* Header y NavBar*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .navbar .cambio-navbar div a img {
+  height: 39px;
+  margin-left: 6px;
+  border-radius: 4px;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li a {
+  color: whitesmoke;
+  text-align: right;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
+  background-color: #0b1457;
+  padding-right: 8px;
+  border: none;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual {
+  border-bottom: 2px solid whitesmoke;
+}
+header .navbar .cambio-navbar .burger-navbar {
+  border: none;
+  width: 48px;
+  height: 40px;
+  border-radius: 24px;
+  color: whitesmoke;
+  position: relative;
+  left: 8px;
+}
+header .navbar .cambio-navbar .burger-navbar:hover {
+  background-color: #0b1457;
+}
+header .navbar .cambio-navbar .burger-navbar .burger-navbar-icon {
+  width: 24px;
+}
+header .primary-bg {
+  background-color: #1C2465;
+}
+
+main {
+  margin-top: 70px;
+  margin-bottom: 34px;
+}
+
+/*footer*/
+footer {
+  background-color: #1C2465;
+  color: whitesmoke;
+  position: relative;
+  top: 20px;
+}
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(189, 202, 216);
+  padding: 6px 0;
+}
+
+/*HOME*/
+main .banner {
+  display: flex;
+  justify-content: center;
+}
+main .banner img {
+  width: 96%;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 6px rgba(128, 128, 128, 0.774);
+}
+main .cartelera {
+  display: grid;
+  justify-content: space-around;
+  gap: 16px;
+  align-content: center;
+}
+main .cartelera div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 12px;
+  background-color: #1C2465;
+  border: 5px solid #1C2465;
+  box-shadow: 1px 2px 6px gray;
+}
+main .cartelera div a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 14px;
+}
+main .cartelera div a p {
+  margin-top: 6px;
+  margin-bottom: 1px;
+}
+
+/* Media Query Tablet Home */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  main .cartelera {
+    grid-template-columns: auto auto;
+  }
+}
+/* Media Query Desktop Home */
+@media screen and (min-width: 1023px) {
+  main .cartelera {
+    grid-template-columns: auto auto auto;
+  }
+  header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
+    color: whitesmoke;
+    background-color: #0b1457;
+    border-radius: 24px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
