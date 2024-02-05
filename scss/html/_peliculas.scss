@@ -1,0 +1,111 @@
+// PELICULAS
+
+@import "../utilidades/variables";
+
+/* Peliculas */
+
+main {
+  .peliculas-titulo {
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: $color-darker-blue;
+    text-decoration: underline;
+  }
+  .caja-pelicula {
+    border: 1px solid rgb(190, 190, 190);
+    margin: 20px 10px 22px;
+    border-radius: 1px;
+    box-shadow: 1px 2px 6px gray;
+    padding: 5px;
+    min-width: 340px;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    div{
+      .info-pelicula{
+        display:flex;
+        margin-top: 20px;
+        justify-content: center;
+        .horario-pelicula{
+          margin: 20px 5px 12px 5px;
+          h3{
+            text-align: center;
+            font-family: sans-serif;
+            padding: 4px;
+            font-size: 20px;
+            margin-top: 7px;
+          }
+          p{
+            margin-top: 8px;
+            line-height: 8px;
+            text-align: center;
+          }
+          img{
+            box-shadow: 1px 2px 6px gray;
+            margin-bottom: 2px;
+            max-width: 150px;
+          }
+        }
+        .descripcion-pelicula{
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          align-items: center;
+          p{
+            font-size: 12px;
+            font-style: italic;
+            padding: 6px 6px 15px 11px;
+            min-width: 130px;
+            margin-top: 12px;
+            margin-right: 4px;
+          }
+          .boton-ver-trailer{
+            display: grid;
+            grid-template-columns: 35px 50px;
+            cursor: pointer;
+            align-items: center;
+            gap: 0;
+            text-decoration: none;
+            margin-bottom: 10px;
+            max-width: 100px;
+            img{
+              width: 34px;
+              height: 34px;
+            }
+            .texto-ver-trailer{
+              color: black;
+              font-size: 8px;
+              font-style: normal;
+              padding: 0;
+              margin: 0;
+              width: 50px;
+            }  
+          }
+        }
+        .trailer-pelicula{
+          display: none;
+          margin: 20px;
+          iframe{
+            box-shadow: 1px 2px 6px gray;
+          }
+        }
+      }
+    }
+    .boton-peliculas-comprar{
+      text-align: center;
+      margin-bottom: 25px;
+      a{
+        button{
+          border: none;
+          background-color: #3342f2;
+          color: whitesmoke;
+          padding: 10px 18px;
+          box-shadow: 1px 2px 6px gray;
+        }
+      }
+    }
+  }
+}
+
+@import "peliculas-mq"

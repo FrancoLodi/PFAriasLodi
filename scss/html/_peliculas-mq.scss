@@ -1,0 +1,60 @@
+// Media Query PELICULAS
+
+/* Media Query Tablet Peliculas */
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+  main {
+    .caja-pelicula {
+      margin-left: 40px;
+      margin-right: 40px;
+      div{
+        .info-pelicula{
+          .horario-pelicula{
+            img{
+              max-width: 170px;
+            }
+          }
+          .descripcion-pelicula{
+            p{
+              font-size: 14px;
+            }
+            .boton-ver-trailer{
+              margin-top: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  main {
+    .caja-pelicula {
+      margin-left: 40px;
+      margin-right: 40px;
+      div{
+        .info-pelicula{
+          .horario-pelicula{
+            img{
+              max-width: 170px;
+            }
+          }
+          .descripcion-pelicula{
+            p{
+              font-size: 14px;
+              margin-right: 0;
+              padding-right: 0;
+            }
+            .boton-ver-trailer{
+              display: none;
+            }
+          }
+          .trailer-pelicula {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// Media Query ENTRADAS
+
+/* Media Query Tablet Entradas */
+
+@media screen and (max-width:600px) {
+  main{
+    .caja-nosotros{
+      .ubicacion-cine{
+        .ubicacion-cine-info{
+          div{
+            .ubicacion-cine-links{
+              a{
+                p{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1023px){
+  main{
+    .caja-nosotros{
+      .ubicacion-cine{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0;
+        margin: 4px;
+        .ubicacion-cine-mapa{
+          min-width: 450px;
+          max-width: 540px;
+          order: 0;
+        }
+        .ubicacion-cine-info{
+          div{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .ubicacion-cine-direccion{
+              text-align: right;
+              p{
+                font-size: 20px;
+              }
+            }
+            .ubicacion-cine-links{
+              margin-top: 65px;
+              margin-bottom: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

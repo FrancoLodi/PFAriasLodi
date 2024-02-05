@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../utilidades/variables";
 
 // HOME
 
@@ -10,10 +10,22 @@ main {
     justify-content: center;
     img {
       width: 96%;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
       box-shadow: 0px 6px 6px rgba(128, 128, 128, 0.774);
     }
   }
+  a{
+    .cartelera-titulo {
+      font-family: Arial;
+      font-size: 20px;
+      font-weight: bold;
+      color: $color-darker-blue;
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+  }
+  
   .cartelera {
     display: grid;
     justify-content: space-around;

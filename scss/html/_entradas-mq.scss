@@ -1,0 +1,15 @@
+// Media Query ENTRADAS
+
+/* Media Query Tablet Entradas */
+
+@media screen and (min-width: 600px) {
+  .main-entrada{
+    margin: 140px 20px 220px;
+    .caja-entradas{
+      max-width: 550px;
+      .selectores{
+        gap: 20px;
+      }
+    }
+  }
+}

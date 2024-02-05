@@ -1,0 +1,61 @@
+// Contacto
+
+@import "../utilidades/variables";
+
+/* Contacto */
+
+main{
+  .caja-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 150px;
+    .caja-contacto-texto{
+      display: flex;
+      flex-direction: column;
+      box-shadow: 1px 2px 6px gray;
+      padding: 40px 70px;
+      gap: 40px;
+      background-color: rgb(245, 245, 245);
+      text-align: center;
+      div{
+        h3{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 22px;
+          color: $color-blue;
+          margin-bottom: 14px;
+          border-bottom: 1px solid $color-blue;
+          padding-bottom: 6px;
+        }
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          line-height: 10px;
+          min-width: 190px;
+        }
+      }
+      .caja-contacto-formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        input, textarea{
+          display: block;
+          margin-bottom: 8px;
+          padding: 6px 20px 6px 8px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .boton-formulario{
+          background-color: #3342f2;
+          color: whitesmoke;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 18px;
+          padding: 6px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@import "contacto-mq";

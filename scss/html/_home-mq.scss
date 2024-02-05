@@ -1,0 +1,86 @@
+// Media Query HOME
+
+/* Media Query Tablet Home */
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+  main {
+    a{
+      .cartelera-titulo{
+        font-size: 24px;
+      }
+    }
+    .cartelera {
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+/* Media Query Desktop Home */
+
+@media screen and (min-width:1023px) {
+  main {
+    a{
+      .cartelera-titulo{
+        font-size: 24px;
+      }
+    }
+    .cartelera {
+      grid-template-columns: auto auto auto;
+    }
+  }
+  header {
+    .navbar {
+      .cambio-navbar {
+        .texto-navbar {
+          .menu-navbar {
+            li {
+              a:hover {
+                color: $color-white;
+                background-color: $color-darker-blue;
+                border-radius: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Query Mobile */
+@media screen and (max-width:600px)  {
+  header {
+    .navbar {
+      .cambio-navbar{
+        div{
+          a{
+            img {
+              position: relative;
+              top: 1px;
+              margin-bottom: 1px;
+              right: 4px;
+            }
+            .logo-texto{
+              font-size: 18px;
+              margin-left: 1px;
+            }
+          }
+        }
+      }
+    }
+  }              
+}
+
+/* Media Query Tablet fix Navbar*/
+@media screen and (min-width:991px) and (max-width:1130px) {
+  header {
+    .navbar {
+      .cambio-navbar{
+        .texto-navbar{
+          position: relative;
+          right: 45px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// Media Query CONTACTO
+
+/* Media Query Tablet Contacto */
+
+@media screen and (min-width: 600px) {
+  main{
+    .caja-contacto{
+      .caja-contacto-texto{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        gap: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main{
+    .caja-contacto{
+      .caja-contacto-formulario{
+        textarea{
+          height: 120px;
+        }
+      }
+    }
+  }
+  
+}
