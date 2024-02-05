@@ -55,18 +55,36 @@
           border: none;
           box-shadow: 1px 1px 3px rgb(133, 133, 133);
         }
+        button:active{
+          background-color: rgb(54, 54, 54);
+          color: $color-white;
+          transform: translateY(2px);
+          transition: transform 0.2s, background-color 0.3s;
+        }
         .botones-entradas-derecha{
           display: flex;
           gap: 14px;
           .boton-comprar-entradas{
-            color: whitesmoke;
-            background-color: #3342f2;
+            color: $color-white;
+            background-color: $color-blue;
             font-weight: 700;
+          }
+          .boton-comprar-entradas:active{
+            background-color: $color-light-blue;
+            color: $color-white;
+            transform: translateY(2px);
+            transition: transform 0.2s, background-color 0.3s;
           }
           a{
             .boton-volver{
-              color: whitesmoke;
+              color: $color-white;
               background-color: rgb(134, 134, 134);
+            }
+            .boton-volver:active{
+              background-color: rgb(54, 54, 54);
+              color: $color-white;
+              transform: translateY(2px);
+              transition: transform 0.2s, background-color 0.3s;
             }
           }
         }

@@ -46,12 +46,18 @@ main{
           font-family: Arial, Helvetica, sans-serif;
         }
         .boton-formulario{
-          background-color: #3342f2;
-          color: whitesmoke;
+          background-color: $color-blue;
+          color: $color-white;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 18px;
           padding: 6px;
           border: none;
+        }
+        .boton-formulario:active{
+          background-color: $color-light-blue;
+          color: $color-white;
+          transform: translateY(1px);
+          transition: transform 0.2s, background-color 0.3s;
         }
       }
     }

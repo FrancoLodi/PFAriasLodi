@@ -69,6 +69,7 @@ main{
             a{
               display: flex;
               gap: 8px;
+              text-decoration: none;
               p{
                 font-size: 14px;
                 font-weight: 700;
@@ -95,6 +96,12 @@ main{
             box-shadow: 1px 2px 6px gray;
             margin-top: 10px;
             margin-bottom: 10px;
+          }
+          .boton-contacto:active{
+            background-color: rgb(179, 179, 179);
+            color: rgb(54, 54, 54);
+            transform: translateY(1px);
+            transition: transform 0.2s, background-color 0.3s;
           }
         }
       }

@@ -98,10 +98,16 @@ main {
       a{
         button{
           border: none;
-          background-color: #3342f2;
+          background-color: $color-blue;
           color: whitesmoke;
           padding: 10px 18px;
-          box-shadow: 1px 2px 6px gray;
+          box-shadow: 1px 2px 6px gray; 
+        }
+        button:active{
+          background-color: $color-light-blue;
+          color: $color-white;
+          transform: translateY(2px);
+          transition: transform 0.2s, background-color 0.3s;
         }
       }
     }
