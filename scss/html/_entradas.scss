@@ -5,9 +5,18 @@
 /* Entradas */
 .main-entrada{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 190px 20px 320px;
+  margin: 120px 20px 320px;
+  .entradas-titulo{
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: $color-darker-blue;
+    text-decoration: underline;
+  }
   .caja-entradas{
     background-color: $color-white;
     max-width: 400px;

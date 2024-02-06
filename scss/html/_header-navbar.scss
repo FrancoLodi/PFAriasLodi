@@ -18,12 +18,10 @@ header {
         a{
           text-decoration: none;
           img{ 
-            height: 39px;
+            height: 42px;
             margin-left: 6px;
             border-radius: 4px;
             display: inline-block;
-            position: relative;
-            top: -1px;
           }
           .logo-texto{
             font-family: Arial;
@@ -103,5 +101,30 @@ footer {
     text-align: center;
     color: rgb(189, 202, 216);
     padding: 6px 0;
+  }
+  .footer-redes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    margin-bottom: 36px;
+    align-items: center;
+    a{
+      display: flex;
+      text-decoration: none;
+      p{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 12px;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .no-copy{
+    border-top: 1px solid;
   }
 }

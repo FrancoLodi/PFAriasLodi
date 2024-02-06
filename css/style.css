@@ -23,12 +23,10 @@ header .navbar .cambio-navbar div a {
   text-decoration: none;
 }
 header .navbar .cambio-navbar div a img {
-  height: 39px;
+  height: 42px;
   margin-left: 6px;
   border-radius: 4px;
   display: inline-block;
-  position: relative;
-  top: -1px;
 }
 header .navbar .cambio-navbar div a .logo-texto {
   font-family: Arial;
@@ -97,6 +95,31 @@ footer p {
   color: rgb(189, 202, 216);
   padding: 6px 0;
 }
+footer .footer-redes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  margin-bottom: 36px;
+  align-items: center;
+}
+footer .footer-redes a {
+  display: flex;
+  text-decoration: none;
+}
+footer .footer-redes a p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 12px;
+}
+footer .footer-redes a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+footer .no-copy {
+  border-top: 1px solid;
+}
 
 /*HOME*/
 main .banner {
@@ -106,7 +129,7 @@ main .banner {
 main .banner img {
   width: 96%;
   margin-bottom: 14px;
-  box-shadow: 0px 6px 6px rgba(128, 128, 128, 0.774);
+  box-shadow: 0px 6px 7px rgba(128, 128, 128, 0.774);
 }
 main a .cartelera-titulo {
   font-family: Arial;
@@ -130,7 +153,7 @@ main .cartelera div {
   margin-top: 12px;
   background-color: #1C2465;
   border: 5px solid #1C2465;
-  box-shadow: 1px 2px 6px gray;
+  box-shadow: 1px 2px 8px gray;
 }
 main .cartelera div a {
   color: whitesmoke;
@@ -191,7 +214,7 @@ main .peliculas-titulo {
   font-family: Arial;
   font-size: 22px;
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 18px;
   color: #0b1457;
   text-decoration: underline;
 }
@@ -330,9 +353,18 @@ main .caja-pelicula .boton-peliculas-comprar a button:active {
 /* Entradas */
 .main-entrada {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 190px 20px 320px;
+  margin: 120px 20px 320px;
+}
+.main-entrada .entradas-titulo {
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  color: #0b1457;
+  text-decoration: underline;
 }
 .main-entrada .caja-entradas {
   background-color: whitesmoke;
@@ -417,14 +449,20 @@ main .caja-pelicula .boton-peliculas-comprar a button:active {
 
 /* Media Query Tablet Entradas */
 @media screen and (min-width: 600px) {
-  .main-entrada {
-    margin: 140px 20px 220px;
+  .main-entrada .entradas-titulo {
+    font-size: 26px;
+    margin-right: 180px;
   }
   .main-entrada .caja-entradas {
     max-width: 550px;
   }
   .main-entrada .caja-entradas .selectores {
     gap: 20px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main-entrada .entradas-titulo {
+    margin-right: 600px;
   }
 }
 /* Nosotros */

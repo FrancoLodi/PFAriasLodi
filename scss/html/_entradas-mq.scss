@@ -4,7 +4,10 @@
 
 @media screen and (min-width: 600px) {
   .main-entrada{
-    margin: 140px 20px 220px;
+    .entradas-titulo{
+      font-size: 26px;
+      margin-right: 180px;
+    }
     .caja-entradas{
       max-width: 550px;
       .selectores{
@@ -12,4 +15,13 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 1023px) {
+  .main-entrada{
+    .entradas-titulo{
+      margin-right: 600px;
+    }
+  }
+  
 }
