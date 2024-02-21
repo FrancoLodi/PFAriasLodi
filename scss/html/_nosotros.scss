@@ -18,7 +18,8 @@ main{
       .titulo-nosotros{
         border-bottom: 2px solid rgba(112, 128, 144, 0.384);
         padding-bottom: 14px;
-        font-family: arial;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
         text-align: center;
       }
       .info-cine{
@@ -88,7 +89,7 @@ main{
           color: $color-blue;
           text-decoration: none;
           .boton-contacto{
-            background-color: whitesmoke;
+            background-color: $color-white;
             padding: 5px 8px;
             border: none;
             border-radius: 2px;
@@ -97,11 +98,15 @@ main{
             margin-top: 10px;
             margin-bottom: 10px;
           }
+          .boton-contacto:hover{
+            background-color: rgb(231, 231, 231);
+            transition: all 0.2s ease;
+          }
           .boton-contacto:active{
-            background-color: rgb(179, 179, 179);
+            background-color: rgb(192, 192, 192);
             color: rgb(54, 54, 54);
             transform: translateY(1px);
-            transition: transform 0.2s, background-color 0.3s;
+            transition: transform 0.2s ease, background-color 0.3s ease;
           }
         }
       }

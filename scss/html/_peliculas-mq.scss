@@ -5,8 +5,8 @@
 @media screen and (min-width:600px) and (max-width:1023px) {
   main {
     .caja-pelicula {
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 80px;
+      margin-right: 80px;
       div{
         .info-pelicula{
           .horario-pelicula{
@@ -30,9 +30,12 @@
 
 @media screen and (min-width: 1023px) {
   main {
+    .peliculas-titulo{
+      font-size: 28px;
+    }
     .caja-pelicula {
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
       div{
         .info-pelicula{
           .horario-pelicula{

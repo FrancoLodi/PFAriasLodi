@@ -14,14 +14,15 @@ main{
     .caja-contacto-texto{
       display: flex;
       flex-direction: column;
-      box-shadow: 1px 2px 6px gray;
+      box-shadow: $sombra-caja;
       padding: 40px 70px;
       gap: 40px;
       background-color: rgb(245, 245, 245);
       text-align: center;
       div{
         h3{
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
           font-size: 22px;
           color: $color-blue;
           margin-bottom: 14px;
@@ -53,11 +54,15 @@ main{
           padding: 6px;
           border: none;
         }
+        .boton-formulario:hover{
+          background-color: #4556ee;
+          transition: all 0.5s ease;
+        }
         .boton-formulario:active{
           background-color: $color-light-blue;
           color: $color-white;
           transform: translateY(1px);
-          transition: transform 0.2s, background-color 0.3s;
+          transition: transform 0.2s ease, background-color 0.3s ease;
         }
       }
     }

@@ -10,9 +10,9 @@
   align-items: center;
   margin: 120px 20px 320px;
   .entradas-titulo{
-    font-family: Arial;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 22px;
-    font-weight: bold;
     margin-bottom: 60px;
     color: $color-darker-blue;
     text-decoration: underline;
@@ -21,7 +21,7 @@
     background-color: $color-white;
     max-width: 400px;
     border-radius: 1px;
-    box-shadow: 1px 2px 6px gray;
+    box-shadow: $sombra-caja;
     padding: 25px;
     border: none;
       .selectores{
@@ -64,6 +64,10 @@
           border: none;
           box-shadow: 1px 1px 3px rgb(133, 133, 133);
         }
+        button:hover{
+          background-color: rgb(204, 204, 204);
+          transition: all 0.5s ease;
+        }
         button:active{
           background-color: rgb(54, 54, 54);
           color: $color-white;
@@ -78,22 +82,30 @@
             background-color: $color-blue;
             font-weight: 700;
           }
+          .boton-comprar-entradas:hover{
+            background-color: #4556ee;
+            transition: all 0.5s ease;
+          }
           .boton-comprar-entradas:active{
             background-color: $color-light-blue;
             color: $color-white;
             transform: translateY(2px);
-            transition: transform 0.2s, background-color 0.3s;
+            transition: transform 0.2s ease, background-color 0.3s ease;
           }
           a{
             .boton-volver{
               color: $color-white;
               background-color: rgb(134, 134, 134);
             }
+            .boton-volver:hover{
+              background-color: rgb(117, 117, 117);
+              transition: all 0.5s ease;
+            }
             .boton-volver:active{
               background-color: rgb(54, 54, 54);
               color: $color-white;
               transform: translateY(2px);
-              transition: transform 0.2s, background-color 0.3s;
+              transition: transform 0.2s ease, background-color 0.3s ease;
             }
           }
         }

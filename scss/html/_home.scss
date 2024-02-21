@@ -16,9 +16,9 @@ main {
   }
   a{
     .cartelera-titulo {
-      font-family: Arial;
-      font-size: 20px;
-      font-weight: bold;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
       color: $color-darker-blue;
       text-decoration: underline;
       text-align: center;
@@ -39,6 +39,7 @@ main {
       background-color: $color-dark-blue;
       border: 5px solid $color-dark-blue;
       box-shadow: 1px 2px 8px gray;
+      z-index: 1;
       a {
         color: $color-white;
         text-decoration: none;
@@ -49,6 +50,11 @@ main {
           margin-bottom: 1px;
         }
       }
+    }
+    div:hover{
+      box-shadow: 1px 2px 18px gray;
+      transform: scale(1.02,1.02);
+      transition: all 0.4s ease;
     }
   }
 }

@@ -12,21 +12,22 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   .navbar {
     .cambio-navbar{
       div{
         a{
           text-decoration: none;
           img{ 
-            height: 42px;
+            height: 22px;
             margin-left: 6px;
             border-radius: 4px;
             display: inline-block;
           }
           .logo-texto{
-            font-family: Arial;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
             font-size: 25px;
-            font-weight: bold;
             color: $color-white;
             margin-bottom: 0;
             margin-left: 6px;
@@ -107,20 +108,26 @@ footer {
     flex-direction: column;
     position: relative;
     top: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
+    justify-content: center;
     align-items: center;
-    a{
-      display: flex;
-      text-decoration: none;
-      p{
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 12px;
-      }
+    gap: 20px;
+    .footer-logo-cine{
+      border-bottom: 2px solid;
+      padding-bottom: 5px;
       img{
-        width: 30px;
-        height: 30px;
-        margin-right: 16px;
+        width: 90px;       
+      }
+    }
+    div{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      a{
+        img{
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }

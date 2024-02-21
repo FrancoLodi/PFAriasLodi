@@ -17,10 +17,13 @@
   }
 }
 
+/* Media Query Desktop Entradas*/
+
 @media screen and (min-width: 1023px) {
   .main-entrada{
     .entradas-titulo{
-      margin-right: 600px;
+      margin-right: 400px;
+      font-size: 28px;
     }
   }
   
