@@ -25,7 +25,7 @@ header {
             display: inline-block;
           }
           .logo-texto{
-            font-family: "Poppins", sans-serif;
+            font-family: $font-principal-titulos;
             font-weight: 400;
             font-size: 25px;
             color: $color-white;
@@ -115,9 +115,18 @@ footer {
     .footer-logo-cine{
       border-bottom: 2px solid;
       padding-bottom: 5px;
+      animation-name: parpadeo;
+      animation-duration: 12s;
+      animation-iteration-count: 3;
+      animation-delay: 10s; 
       img{
-        width: 90px;       
+        width: 90px;
       }
+    }
+    @keyframes parpadeo {
+      0%{opacity: 1;}
+      50%{opacity: 0;}
+      100%{opacity: 1;}
     }
     div{
       display: flex;

@@ -4,6 +4,15 @@
 
 /* Nosotros */
 main{
+  // Mixins
+  @mixin font-mod($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+  }
+  @mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+  }
   .caja-nosotros{
     display: flex;
     flex-direction: column;  
@@ -71,13 +80,12 @@ main{
               display: flex;
               gap: 8px;
               text-decoration: none;
+              // Mixins
               p{
-                font-size: 14px;
-                font-weight: 700;
+                @include font-mod(15px,700);
               }
               img{
-                width: 28px;
-                height: 28px;
+                @include sizes(28px,28px);
               }
             }
           }

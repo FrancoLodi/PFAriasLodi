@@ -1,0 +1,50 @@
+@import "../utilidades/variables";
+
+// ASIENTOS placeholder
+
+main{
+  .asientos-imagen{
+    width: 90%;
+    margin: 90px auto 40px;
+    max-width: 650px;
+  }
+  .asientos-botones{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    .asientos-boton-volver{
+      button{
+        padding: 8px 16px;
+        font-size: 12px;
+        background-color: rgb(224, 224, 224);
+        border: none;
+        box-shadow: 1px 1px 3px rgb(133, 133, 133);
+      }
+      button:hover{
+        background-color: rgb(204, 204, 204);
+        transition: all 0.3s ease;
+      }
+      button:active{
+        transform: translate(0,2px);
+        transition: all 0.3 ease;
+      }
+    }
+    .asientos-boton-continuar{
+      button{
+        padding: 8px 16px;
+        font-size: 12px;
+        background-color: rgb(224, 224, 224);
+        border: none;
+        box-shadow: 1px 1px 3px rgb(133, 133, 133);
+      }
+      button:hover{
+        background-color: $color-green;
+        transition: all 0.3s ease;
+      }
+      button:active{
+        transform: translate(0,2px);
+        transition: all 0.3 ease;
+      }
+    }
+  }
+}

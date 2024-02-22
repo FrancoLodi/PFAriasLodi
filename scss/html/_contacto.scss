@@ -29,11 +29,15 @@ main{
           border-bottom: 1px solid $color-blue;
           padding-bottom: 6px;
         }
+        // Extend
         p{
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 15px;
-          line-height: 10px;
-          min-width: 190px;
+          @extend h3;
+          font-size: 14px;
+          line-height: 20px;
+          min-width: 200px;
+          color: #212529;
+          border: none;
+          margin-bottom: 0;
         }
       }
       .caja-contacto-formulario{
