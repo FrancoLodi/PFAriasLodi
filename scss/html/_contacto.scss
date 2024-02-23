@@ -24,9 +24,9 @@ main{
           font-family: "Poppins", sans-serif;
           font-weight: 400;
           font-size: 22px;
-          color: $color-blue;
+          color: $color-red;
           margin-bottom: 14px;
-          border-bottom: 1px solid $color-blue;
+          border-bottom: 1px solid $color-red;
           padding-bottom: 6px;
         }
         // Extend
@@ -51,7 +51,7 @@ main{
           font-family: Arial, Helvetica, sans-serif;
         }
         .boton-formulario{
-          background-color: $color-blue;
+          background-color: $color-red;
           color: $color-white;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 18px;
@@ -59,11 +59,11 @@ main{
           border: none;
         }
         .boton-formulario:hover{
-          background-color: $color-blue-hover;
+          background-color: $color-red-hover;
           transition: all 0.5s ease;
         }
         .boton-formulario:active{
-          background-color: $color-light-blue;
+          background-color: $color-light-red;
           color: $color-white;
           transform: translateY(1px);
           transition: transform 0.2s ease, background-color 0.3s ease;
