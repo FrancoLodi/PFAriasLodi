@@ -83,7 +83,7 @@
             font-weight: 700;
           }
           .boton-comprar-entradas:hover{
-            background-color: #4556ee;
+            background-color: $color-blue-hover;
             transition: all 0.5s ease;
           }
           .boton-comprar-entradas:active{
