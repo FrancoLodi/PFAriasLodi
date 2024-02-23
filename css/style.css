@@ -56,7 +56,7 @@ header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual {
 header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual:hover {
   border-bottom: 2px solid whitesmoke;
   border-radius: 0;
-  background-color: #651c20;
+  background-color: #1C2465;
 }
 header .navbar .cambio-navbar .burger-navbar {
   border: none;
@@ -75,7 +75,7 @@ header .navbar .cambio-navbar .burger-navbar .burger-navbar-icon {
   width: 24px;
 }
 header .primary-bg {
-  background-color: #651c20;
+  background-color: #1C2465;
 }
 
 main {
@@ -85,7 +85,7 @@ main {
 
 /*footer*/
 footer {
-  background-color: #651c20;
+  background-color: #1C2465;
   color: whitesmoke;
   position: relative;
   top: 20px;
@@ -167,8 +167,8 @@ main .cartelera div {
   flex-direction: column;
   text-align: center;
   margin-top: 12px;
-  background-color: #651c20;
-  border: 5px solid #651c20;
+  background-color: #1C2465;
+  border: 5px solid #1C2465;
   box-shadow: 1px 1px 8px gray;
   z-index: 1;
 }
