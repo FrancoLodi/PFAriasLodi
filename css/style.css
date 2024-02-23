@@ -56,7 +56,7 @@ header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual {
 header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual:hover {
   border-bottom: 2px solid whitesmoke;
   border-radius: 0;
-  background-color: #1C2465;
+  background-color: #651c20;
 }
 header .navbar .cambio-navbar .burger-navbar {
   border: none;
@@ -75,7 +75,7 @@ header .navbar .cambio-navbar .burger-navbar .burger-navbar-icon {
   width: 24px;
 }
 header .primary-bg {
-  background-color: #1C2465;
+  background-color: #651c20;
 }
 
 main {
@@ -85,7 +85,7 @@ main {
 
 /*footer*/
 footer {
-  background-color: #1C2465;
+  background-color: #651c20;
   color: whitesmoke;
   position: relative;
   top: 20px;
@@ -167,8 +167,8 @@ main .cartelera div {
   flex-direction: column;
   text-align: center;
   margin-top: 12px;
-  background-color: #1C2465;
-  border: 5px solid #1C2465;
+  background-color: #651c20;
+  border: 5px solid #651c20;
   box-shadow: 1px 1px 8px gray;
   z-index: 1;
 }
@@ -217,7 +217,7 @@ main .cartelera div:hover {
     margin-left: 26px;
   }
 }
-/* Media Query Mobile */
+/* Media Query Navbar Mobile */
 @media screen and (max-width: 600px) {
   header .navbar .cambio-navbar div a img {
     margin-bottom: 1px;
@@ -362,6 +362,7 @@ main .caja-pelicula .boton-peliculas-comprar a button:active {
     margin-top: 70px;
   }
 }
+/* Media Query Desktop Peliculas */
 @media screen and (min-width: 1023px) {
   main .peliculas-titulo {
     font-size: 28px;
@@ -630,6 +631,7 @@ main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contac
     display: none;
   }
 }
+/* Media Query Desktop Nosotros */
 @media screen and (min-width: 1023px) {
   main .caja-nosotros .ubicacion-cine {
     display: grid;
@@ -731,11 +733,13 @@ main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formul
     gap: 140px;
   }
 }
+/* Media Query Mobile Peliculas */
 @media screen and (max-width: 600px) {
   main .caja-contacto .caja-contacto-formulario textarea {
     height: 120px;
   }
 }
+/* Asientos */
 main .asientos-imagen {
   width: 90%;
   margin: 90px auto 40px;
