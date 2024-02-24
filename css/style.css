@@ -45,7 +45,7 @@ header .navbar .cambio-navbar .texto-navbar .menu-navbar li a {
   text-align: right;
 }
 header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
-  background-color: #0b1457;
+  background-color: #3c0b10;
   padding-right: 8px;
   border: none;
   transition: background-color 0.2s;
@@ -56,7 +56,7 @@ header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual {
 header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual:hover {
   border-bottom: 2px solid whitesmoke;
   border-radius: 0;
-  background-color: #1C2465;
+  background-color: #651c20;
 }
 header .navbar .cambio-navbar .burger-navbar {
   border: none;
@@ -68,14 +68,14 @@ header .navbar .cambio-navbar .burger-navbar {
   left: 8px;
 }
 header .navbar .cambio-navbar .burger-navbar:hover {
-  background-color: #0b1457;
+  background-color: #3c0b10;
   transition: background-color 0.2s;
 }
 header .navbar .cambio-navbar .burger-navbar .burger-navbar-icon {
   width: 24px;
 }
 header .primary-bg {
-  background-color: #1C2465;
+  background-color: #651c20;
 }
 
 main {
@@ -85,7 +85,7 @@ main {
 
 /*footer*/
 footer {
-  background-color: #1C2465;
+  background-color: #651c20;
   color: whitesmoke;
   position: relative;
   top: 20px;
@@ -151,7 +151,7 @@ main a .cartelera-titulo {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 22px;
-  color: #0b1457;
+  color: #3c0b10;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 6px;
@@ -167,8 +167,8 @@ main .cartelera div {
   flex-direction: column;
   text-align: center;
   margin-top: 12px;
-  background-color: #1C2465;
-  border: 5px solid #1C2465;
+  background-color: #651c20;
+  border: 5px solid #651c20;
   box-shadow: 1px 1px 8px gray;
   z-index: 1;
 }
@@ -207,7 +207,7 @@ main .cartelera div:hover {
   }
   header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
     color: whitesmoke;
-    background-color: #0b1457;
+    background-color: #3c0b10;
     border-radius: 24px;
   }
   header .navbar .cambio-navbar div a img {
@@ -240,7 +240,7 @@ main .peliculas-titulo {
   font-weight: 600;
   font-size: 22px;
   margin-left: 18px;
-  color: #0b1457;
+  color: #3c0b10;
   text-decoration: underline;
 }
 main .caja-pelicula {
@@ -330,17 +330,17 @@ main .caja-pelicula .boton-peliculas-comprar {
 }
 main .caja-pelicula .boton-peliculas-comprar a button {
   border: none;
-  background-color: #3342f2;
+  background-color: #b72b31;
   color: whitesmoke;
   padding: 10px 18px;
   box-shadow: 1px 2px 6px gray;
 }
 main .caja-pelicula .boton-peliculas-comprar a button:hover {
-  background-color: #4556ee;
+  background-color: #db6b70;
   transition: all 0.5s ease;
 }
 main .caja-pelicula .boton-peliculas-comprar a button:active {
-  background-color: #5a6af0;
+  background-color: #6e0c14;
   color: whitesmoke;
   transform: translateY(2px);
   transition: transform 0.2s ease, background-color 0.3s ease;
@@ -399,7 +399,7 @@ main .caja-pelicula .boton-peliculas-comprar a button:active {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 60px;
-  color: #0b1457;
+  color: #3c0b10;
   text-decoration: underline;
 }
 .main-entrada .caja-entradas {
@@ -467,15 +467,15 @@ main .caja-pelicula .boton-peliculas-comprar a button:active {
 }
 .main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas {
   color: whitesmoke;
-  background-color: #3342f2;
+  background-color: #b72b31;
   font-weight: 700;
 }
 .main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas:hover {
-  background-color: #4556ee;
+  background-color: #db6b70;
   transition: all 0.5s ease;
 }
 .main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas:active {
-  background-color: #5a6af0;
+  background-color: #6e0c14;
   color: whitesmoke;
   transform: translateY(2px);
   transition: transform 0.2s ease, background-color 0.3s ease;
@@ -553,7 +553,7 @@ main .caja-nosotros .ubicacion-cine .ubicacion-cine-mapa {
   order: 1;
 }
 main .caja-nosotros .ubicacion-cine .ubicacion-cine-info {
-  background-color: #3342f2;
+  background-color: #b72b31;
   padding: 8px 12px;
 }
 main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div {
@@ -601,7 +601,7 @@ main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contac
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #3342f2;
+  color: #b72b31;
   text-decoration: none;
 }
 main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contacto .boton-contacto {
@@ -681,9 +681,9 @@ main .caja-contacto .caja-contacto-texto div h3, main .caja-contacto .caja-conta
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: #3342f2;
+  color: #b72b31;
   margin-bottom: 14px;
-  border-bottom: 1px solid #3342f2;
+  border-bottom: 1px solid #b72b31;
   padding-bottom: 6px;
 }
 main .caja-contacto .caja-contacto-texto div p {
@@ -706,7 +706,7 @@ main .caja-contacto .caja-contacto-texto .caja-contacto-formulario input, main .
   font-family: Arial, Helvetica, sans-serif;
 }
 main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario {
-  background-color: #3342f2;
+  background-color: #b72b31;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
@@ -714,11 +714,11 @@ main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formul
   border: none;
 }
 main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario:hover {
-  background-color: #4556ee;
+  background-color: #db6b70;
   transition: all 0.5s ease;
 }
 main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario:active {
-  background-color: #5a6af0;
+  background-color: #6e0c14;
   color: whitesmoke;
   transform: translateY(1px);
   transition: transform 0.2s ease, background-color 0.3s ease;
