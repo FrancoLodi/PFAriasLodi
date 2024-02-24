@@ -14,7 +14,7 @@
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 60px;
-    color: $color-darker-blue;
+    color: $color-darker-red;
     text-decoration: underline;
   }
   .caja-entradas{
@@ -79,15 +79,15 @@
           gap: 14px;
           .boton-comprar-entradas{
             color: $color-white;
-            background-color: $color-blue;
+            background-color: $color-red;
             font-weight: 700;
           }
           .boton-comprar-entradas:hover{
-            background-color: $color-blue-hover;
+            background-color: $color-red-hover;
             transition: all 0.5s ease;
           }
           .boton-comprar-entradas:active{
-            background-color: $color-light-blue;
+            background-color: $color-light-red;
             color: $color-white;
             transform: translateY(2px);
             transition: transform 0.2s ease, background-color 0.3s ease;

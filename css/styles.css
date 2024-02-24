@@ -1,0 +1,784 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-image: linear-gradient(to top, rgb(192, 192, 192), whitesmoke);
+}
+
+/* Header y NavBar*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+header .navbar .cambio-navbar div a {
+  text-decoration: none;
+}
+header .navbar .cambio-navbar div a img {
+  height: 22px;
+  margin-left: 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+header .navbar .cambio-navbar div a .logo-texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: whitesmoke;
+  margin-bottom: 0;
+  margin-left: 6px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li a {
+  color: whitesmoke;
+  text-align: right;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
+  background-color: #3c0b10;
+  padding-right: 8px;
+  border: none;
+  transition: background-color 0.2s;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual {
+  border-bottom: 2px solid whitesmoke;
+}
+header .navbar .cambio-navbar .texto-navbar .menu-navbar li .pagina-actual:hover {
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+  background-color: #651c20;
+}
+header .navbar .cambio-navbar .burger-navbar {
+  border: none;
+  width: 48px;
+  height: 40px;
+  border-radius: 24px;
+  color: whitesmoke;
+  position: relative;
+  left: 8px;
+}
+header .navbar .cambio-navbar .burger-navbar:hover {
+  background-color: #3c0b10;
+  transition: background-color 0.2s;
+}
+header .navbar .cambio-navbar .burger-navbar .burger-navbar-icon {
+  width: 24px;
+}
+header .primary-bg {
+  background-color: #651c20;
+}
+
+main {
+  margin-top: 70px;
+  margin-bottom: 34px;
+}
+
+/*footer*/
+footer {
+  background-color: #651c20;
+  color: whitesmoke;
+  position: relative;
+  top: 20px;
+}
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(189, 202, 216);
+  padding: 6px 0;
+}
+footer .footer-redes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  margin-bottom: 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-redes .footer-logo-cine {
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  animation-name: parpadeo;
+  animation-duration: 12s;
+  animation-iteration-count: 3;
+  animation-delay: 10s;
+}
+footer .footer-redes .footer-logo-cine img {
+  width: 90px;
+}
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer .footer-redes div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+footer .footer-redes div a img {
+  width: 30px;
+  height: 30px;
+}
+footer .no-copy {
+  border-top: 1px solid;
+}
+
+/*HOME*/
+main .banner-slide-cambios {
+  width: 96%;
+  margin: 0 auto 14px;
+  box-shadow: 0px 6px 7px rgba(128, 128, 128, 0.774);
+}
+main a .cartelera-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #3c0b10;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 6px;
+}
+main .cartelera {
+  display: grid;
+  justify-content: space-around;
+  gap: 16px;
+  align-content: center;
+}
+main .cartelera div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 12px;
+  background-color: #651c20;
+  border: 5px solid #651c20;
+  box-shadow: 1px 1px 8px gray;
+  z-index: 1;
+}
+main .cartelera div a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 14px;
+}
+main .cartelera div a p {
+  margin-top: 6px;
+  margin-bottom: 1px;
+}
+main .cartelera div:hover {
+  box-shadow: 1px 2px 18px gray;
+  transform: scale(1.02, 1.02);
+  transition: all 0.4s ease;
+}
+
+/* Media Query Tablet Home */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  main a .cartelera-titulo {
+    font-size: 28px;
+  }
+  main .cartelera {
+    grid-template-columns: auto auto;
+  }
+}
+/* Media Query Desktop Home */
+@media screen and (min-width: 1023px) {
+  main a .cartelera-titulo {
+    font-size: 30px;
+  }
+  main .cartelera {
+    grid-template-columns: auto auto auto;
+  }
+  header .navbar .cambio-navbar .texto-navbar .menu-navbar li a:hover {
+    color: whitesmoke;
+    background-color: #3c0b10;
+    border-radius: 24px;
+  }
+  header .navbar .cambio-navbar div a img {
+    height: 26px;
+  }
+  header .navbar .cambio-navbar div a .logo-texto {
+    margin-left: 26px;
+  }
+}
+/* Media Query Navbar Mobile */
+@media screen and (max-width: 600px) {
+  header .navbar .cambio-navbar div a img {
+    margin-bottom: 1px;
+    right: 4px;
+  }
+  header .navbar .cambio-navbar div a .logo-texto {
+    display: none;
+  }
+}
+/* Media Query Tablet fix Navbar*/
+@media screen and (min-width: 991px) and (max-width: 1130px) {
+  header .navbar .cambio-navbar .texto-navbar {
+    position: relative;
+    right: 45px;
+  }
+}
+/* Peliculas */
+main .peliculas-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 18px;
+  color: #3c0b10;
+  text-decoration: underline;
+}
+main .caja-pelicula {
+  border: 1px solid rgb(190, 190, 190);
+  margin: 20px 20px 22px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 8px gray;
+  padding: 5px;
+  min-width: 340px;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+main .caja-pelicula div .info-pelicula {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+main .caja-pelicula div .info-pelicula .horario-pelicula {
+  margin: 20px 5px 12px 5px;
+}
+main .caja-pelicula div .info-pelicula .horario-pelicula h3, main .caja-pelicula .caja-contacto .caja-contacto-texto div .info-pelicula .horario-pelicula p, main .caja-contacto .caja-contacto-texto .caja-pelicula div .info-pelicula .horario-pelicula p {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 4px;
+  font-size: 20px;
+  margin-top: 7px;
+}
+main .caja-pelicula div .info-pelicula .horario-pelicula p {
+  margin-top: 8px;
+  line-height: 8px;
+  text-align: center;
+}
+main .caja-pelicula div .info-pelicula .horario-pelicula img {
+  box-shadow: 1px 2px 6px gray;
+  margin-bottom: 2px;
+  max-width: 150px;
+}
+main .caja-pelicula div .info-pelicula .descripcion-pelicula {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+main .caja-pelicula div .info-pelicula .descripcion-pelicula p {
+  font-size: 12px;
+  font-style: italic;
+  padding: 6px 6px 15px 11px;
+  min-width: 130px;
+  margin-top: 12px;
+  margin-right: 4px;
+}
+main .caja-pelicula div .info-pelicula .descripcion-pelicula .boton-ver-trailer {
+  display: grid;
+  grid-template-columns: 35px 50px;
+  cursor: pointer;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  margin-bottom: 10px;
+  max-width: 100px;
+  position: relative;
+  right: 20px;
+}
+main .caja-pelicula div .info-pelicula .descripcion-pelicula .boton-ver-trailer img {
+  width: 38px;
+  height: 38px;
+}
+main .caja-pelicula div .info-pelicula .descripcion-pelicula .boton-ver-trailer .texto-ver-trailer {
+  color: black;
+  font-size: 10px;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  margin-left: 3px;
+  width: 50px;
+}
+main .caja-pelicula div .info-pelicula .trailer-pelicula {
+  display: none;
+  margin: 20px;
+}
+main .caja-pelicula div .info-pelicula .trailer-pelicula iframe {
+  box-shadow: 1px 2px 6px gray;
+}
+main .caja-pelicula .boton-peliculas-comprar {
+  text-align: center;
+  margin-bottom: 25px;
+}
+main .caja-pelicula .boton-peliculas-comprar a button {
+  border: none;
+  background-color: #b72b31;
+  color: whitesmoke;
+  padding: 10px 18px;
+  box-shadow: 1px 2px 6px gray;
+}
+main .caja-pelicula .boton-peliculas-comprar a button:hover {
+  background-color: #db6b70;
+  transition: all 0.5s ease;
+}
+main .caja-pelicula .boton-peliculas-comprar a button:active {
+  background-color: #6e0c14;
+  color: whitesmoke;
+  transform: translateY(2px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Media Query Tablet Peliculas */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  main .caja-pelicula {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  main .caja-pelicula div .info-pelicula .horario-pelicula img {
+    max-width: 170px;
+  }
+  main .caja-pelicula div .info-pelicula .descripcion-pelicula p {
+    font-size: 14px;
+  }
+  main .caja-pelicula div .info-pelicula .descripcion-pelicula .boton-ver-trailer {
+    margin-top: 70px;
+  }
+}
+/* Media Query Desktop Peliculas */
+@media screen and (min-width: 1023px) {
+  main .peliculas-titulo {
+    font-size: 28px;
+  }
+  main .caja-pelicula {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .caja-pelicula div .info-pelicula .horario-pelicula img {
+    max-width: 170px;
+  }
+  main .caja-pelicula div .info-pelicula .descripcion-pelicula p {
+    font-size: 14px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  main .caja-pelicula div .info-pelicula .descripcion-pelicula .boton-ver-trailer {
+    display: none;
+  }
+  main .caja-pelicula div .info-pelicula .trailer-pelicula {
+    display: inline-block;
+  }
+}
+/* Entradas */
+.main-entrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 20px 320px;
+}
+.main-entrada .entradas-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 60px;
+  color: #3c0b10;
+  text-decoration: underline;
+}
+.main-entrada .caja-entradas {
+  background-color: whitesmoke;
+  max-width: 400px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 8px gray;
+  padding: 25px;
+  border: none;
+}
+.main-entrada .caja-entradas .selectores {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.main-entrada .caja-entradas .selectores select {
+  padding: 6px 12px 6px 4px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px gray;
+  border: none;
+  font-size: 12px;
+}
+.main-entrada .caja-entradas .info-pago {
+  font-size: 20px;
+  line-height: 22px;
+}
+.main-entrada .caja-entradas .info-pago .info-pago-total {
+  font-size: 22px;
+  font-weight: 700;
+  border-top: 3px dashed rgb(139, 139, 139);
+  display: block;
+  padding-top: 10px;
+  margin-top: 26px;
+  text-align: right;
+}
+.main-entrada .caja-entradas .botones-entradas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin: 26px 24px 1px 18px;
+}
+.main-entrada .caja-entradas .botones-entradas button {
+  padding: 8px 16px;
+  font-size: 12px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  box-shadow: 1px 1px 3px rgb(133, 133, 133);
+}
+.main-entrada .caja-entradas .botones-entradas button:hover {
+  background-color: rgb(204, 204, 204);
+  transition: all 0.5s ease;
+}
+.main-entrada .caja-entradas .botones-entradas button:active {
+  background-color: rgb(54, 54, 54);
+  color: whitesmoke;
+  transform: translateY(2px);
+  transition: transform 0.2s, background-color 0.3s;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha {
+  display: flex;
+  gap: 14px;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas {
+  color: whitesmoke;
+  background-color: #b72b31;
+  font-weight: 700;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas:hover {
+  background-color: #db6b70;
+  transition: all 0.5s ease;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha .boton-comprar-entradas:active {
+  background-color: #6e0c14;
+  color: whitesmoke;
+  transform: translateY(2px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha a .boton-volver {
+  color: whitesmoke;
+  background-color: rgb(134, 134, 134);
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha a .boton-volver:hover {
+  background-color: rgb(117, 117, 117);
+  transition: all 0.5s ease;
+}
+.main-entrada .caja-entradas .botones-entradas .botones-entradas-derecha a .boton-volver:active {
+  background-color: rgb(54, 54, 54);
+  color: whitesmoke;
+  transform: translateY(2px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Media Query Tablet Entradas */
+@media screen and (min-width: 600px) {
+  .main-entrada .entradas-titulo {
+    font-size: 26px;
+    margin-right: 180px;
+  }
+  .main-entrada .caja-entradas {
+    max-width: 550px;
+  }
+  .main-entrada .caja-entradas .selectores {
+    gap: 20px;
+  }
+}
+/* Media Query Desktop Entradas*/
+@media screen and (min-width: 1023px) {
+  .main-entrada .entradas-titulo {
+    margin-right: 400px;
+    font-size: 28px;
+  }
+}
+/* Nosotros */
+main .caja-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  margin: auto 14px;
+}
+main .caja-nosotros .nosotros-cine {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  gap: 18px;
+}
+main .caja-nosotros .nosotros-cine .titulo-nosotros {
+  border-bottom: 2px solid rgba(112, 128, 144, 0.384);
+  padding-bottom: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+main .caja-nosotros .nosotros-cine .info-cine {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .caja-nosotros .ubicacion-cine {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0;
+  margin: 4px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-mapa {
+  display: flex;
+  width: 100%;
+  min-width: 400px;
+  order: 1;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info {
+  background-color: #b72b31;
+  padding: 8px 12px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div p {
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 2px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-direccion {
+  margin-bottom: 12px;
+  margin-top: 6px;
+  margin-left: 4px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links {
+  margin-top: 5px;
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links a {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links a p {
+  font-size: 15px;
+  font-weight: 700;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links a img {
+  width: 28px;
+  height: 28px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contacto {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b72b31;
+  text-decoration: none;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contacto .boton-contacto {
+  background-color: whitesmoke;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  box-shadow: 1px 2px 6px gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contacto .boton-contacto:hover {
+  background-color: rgb(231, 231, 231);
+  transition: all 0.2s ease;
+}
+main .caja-nosotros .ubicacion-cine .ubicacion-cine-info .ubicacion-boton-contacto .boton-contacto:active {
+  background-color: rgb(192, 192, 192);
+  color: rgb(54, 54, 54);
+  transform: translateY(1px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Media Query Tablet Entradas */
+@media screen and (max-width: 600px) {
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links a p {
+    display: none;
+  }
+}
+/* Media Query Desktop Nosotros */
+@media screen and (min-width: 1023px) {
+  main .caja-nosotros .ubicacion-cine {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0;
+    margin: 4px;
+  }
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-mapa {
+    min-width: 450px;
+    max-width: 540px;
+    order: 0;
+  }
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-direccion {
+    text-align: right;
+  }
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-direccion p {
+    font-size: 20px;
+  }
+  main .caja-nosotros .ubicacion-cine .ubicacion-cine-info div .ubicacion-cine-links {
+    margin-top: 65px;
+    margin-bottom: 110px;
+  }
+}
+/* Contacto */
+main .caja-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 95px;
+  margin-bottom: 150px;
+}
+main .caja-contacto .caja-contacto-texto {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 8px gray;
+  padding: 40px 70px;
+  gap: 40px;
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+main .caja-contacto .caja-contacto-texto div h3, main .caja-contacto .caja-contacto-texto div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #b72b31;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #b72b31;
+  padding-bottom: 6px;
+}
+main .caja-contacto .caja-contacto-texto div p {
+  font-size: 14px;
+  line-height: 20px;
+  min-width: 200px;
+  color: #212529;
+  border: none;
+  margin-bottom: 0;
+}
+main .caja-contacto .caja-contacto-texto .caja-contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+main .caja-contacto .caja-contacto-texto .caja-contacto-formulario input, main .caja-contacto .caja-contacto-texto .caja-contacto-formulario textarea {
+  display: block;
+  margin-bottom: 8px;
+  padding: 6px 20px 6px 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario {
+  background-color: #b72b31;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  border: none;
+}
+main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario:hover {
+  background-color: #db6b70;
+  transition: all 0.5s ease;
+}
+main .caja-contacto .caja-contacto-texto .caja-contacto-formulario .boton-formulario:active {
+  background-color: #6e0c14;
+  color: whitesmoke;
+  transform: translateY(1px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Media Query Tablet Contacto */
+@media screen and (min-width: 600px) {
+  main .caja-contacto .caja-contacto-texto {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+  }
+}
+/* Media Query Mobile Peliculas */
+@media screen and (max-width: 600px) {
+  main .caja-contacto .caja-contacto-formulario textarea {
+    height: 120px;
+  }
+}
+/* Asientos */
+main .asientos-imagen {
+  width: 90%;
+  margin: 90px auto 40px;
+  max-width: 650px;
+}
+main .asientos-botones {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+main .asientos-botones .asientos-boton-volver button {
+  padding: 8px 16px;
+  font-size: 12px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  box-shadow: 1px 1px 3px rgb(133, 133, 133);
+}
+main .asientos-botones .asientos-boton-volver button:hover {
+  background-color: rgb(204, 204, 204);
+  transition: all 0.3s ease;
+}
+main .asientos-botones .asientos-boton-volver button:active {
+  transform: translate(0, 2px);
+  transition: all 0.3 ease;
+}
+main .asientos-botones .asientos-boton-continuar button {
+  padding: 8px 16px;
+  font-size: 12px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  box-shadow: 1px 1px 3px rgb(133, 133, 133);
+}
+main .asientos-botones .asientos-boton-continuar button:hover {
+  background-color: #4a8f39;
+  transition: all 0.3s ease;
+}
+main .asientos-botones .asientos-boton-continuar button:active {
+  transform: translate(0, 2px);
+  transition: all 0.3 ease;
+}
+
+/*# sourceMappingURL=styles.css.map */
